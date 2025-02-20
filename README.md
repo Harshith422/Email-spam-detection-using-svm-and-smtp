@@ -15,10 +15,10 @@ This project implements **Spam Detection** using **Support Vector Machines (SVM)
 │── Datasets/                  # Dataset containing spam & non-spam emails
 │── Datasets/spam.csv
 │── CODE
-│── 📜 client.py              # Client end
-│── 📜 email.txt              # Predict if an email is spam or not
-│── 📜 server.py              # Server end
-│── 📜 svm_model.py           # Model 
+│── CODE/📜 client.py              # Client end
+│── CODE/📜 email.txt              # Predict if an email is spam or not
+│── CODE/📜 server.py              # Server end
+│── CODE/📜 svm_model.py           # Model 
 │── 📜 README.md              # Project documentation
 ```
 
