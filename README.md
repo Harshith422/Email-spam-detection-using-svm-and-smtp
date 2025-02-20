@@ -12,16 +12,14 @@ This project implements **Spam Detection** using **Support Vector Machines (SVM)
 ## 📂 Project Structure
 ```
 📁 SpamDetection-SVM-SMTP/
-│── 📂 data/                   # Dataset containing spam & non-spam emails
-│── 📂 models/                 # Trained SVM models
-│── 📂 scripts/                # Python scripts for training & testing
-│── 📂 logs/                   # Logs for email transactions & spam detection
-│── 📜 train_model.py          # Train SVM model on email dataset
-│── 📜 predict.py              # Predict if an email is spam or not
-│── 📜 smtp_handler.py         # Handles sending emails via SMTP
-│── 📜 app.py                  # Main application script
-│── 📜 requirements.txt        # Dependencies
-│── 📜 README.md               # Project documentation
+│── Datasets/                  # Dataset containing spam & non-spam emails
+│── Datasets/spam.csv
+│── CODE
+│── 📜 client.py              # Client end
+│── 📜 email.txt              # Predict if an email is spam or not
+│── 📜 server.py              # Server end
+│── 📜 svm_model.py           # Model 
+│── 📜 README.md              # Project documentation
 ```
 
 ## 🛠 Installation & Setup
@@ -46,15 +44,15 @@ This project implements **Spam Detection** using **Support Vector Machines (SVM)
 ## 🎯 Usage
 - **Train the Model**  
   ```bash
-  python train_model.py
+  svm_model.py
   ```
 - **Classify an Email**  
   ```bash
-  python predict.py --email "example_email.txt"
+  email.txt --email "example_email.txt"
   ```
 - **Send Email Alerts via SMTP**  
   ```bash
-  python smtp_handler.py --recipient "user@example.com" --subject "Spam Alert" --message "Spam detected!"
+  python client.py --recipient "user@example.com" --subject "Spam Alert" --message "Spam detected!"
   ```
 
 ## 🧠 Model & Approach
